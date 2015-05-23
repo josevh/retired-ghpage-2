@@ -59,16 +59,24 @@ body {
 /*------------------------------
             nav icons
 ------------------------------ */
+
+/* positioning and remove def. border, make bg match */
 .btn-nav {
   border: 0;
   margin-left: -15px;
   background-color: transparent;
 }
+/* clicked icons bg, no change; outline white */
+.btn-nav:focus {
+  background-color: transparent;
+  outline-color: white;
+}
 
+/* make icon bg match */
 .btn-nav:hover {
   background: transparent;
 }
-
+/* make icons vis. on hover */
 .sidebar-nav li:hover {
     background: rgba(255,255,255,0.2);
 }
