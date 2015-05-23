@@ -57,12 +57,18 @@ body {
 }
 
 /*------------------------------
-            icons
+            nav icons
 ------------------------------ */
 .btn-nav {
-  /*border: 1px solid red;*/
   border: 0;
   margin-left: -15px;
   background-color: transparent;
+}
 
+.btn-nav:hover {
+  background: transparent;
+}
+
+.sidebar-nav li:hover {
+    background: rgba(255,255,255,0.2);
 }
