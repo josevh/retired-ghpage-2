@@ -66,6 +66,12 @@ body {
   margin-left: -15px;
   background-color: transparent;
 }
+
+/* avatar positioning */
+.sidebar-brand img {
+    margin-left: -11px;
+}
+
 /* clicked icons bg, no change; outline white */
 .btn-nav:focus {
   background-color: transparent;
