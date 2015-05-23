@@ -58,6 +58,35 @@ body {
     }
 }
 
+.list-inline {
+  margin-left: -25px;
+}
+
+.list-inline li:first-child {
+  width: 50px;
+}
+
+.list-inline li:nth-child(2){
+  width: 73%;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline li:nth-child(2) a{
+  margin-left: -15px;
+  color: #999999;
+  height: 100%;
+  width: 100%;
+}
+
+.list-inline li:nth-child(2) a:hover{
+  color: #333333;
+}
+
+.list-inline li:nth-child(2):hover{
+  background-color: transparent;
+}
+
 /*------------------------------
             nav icons
 ------------------------------ */
@@ -72,6 +101,7 @@ body {
 /* avatar positioning */
 .sidebar-brand img {
     margin-left: -11px;
+    vertical-align: middle;
 }
 
 /* clicked icons bg, no change; outline white */
