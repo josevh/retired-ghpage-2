@@ -7,10 +7,10 @@ $("#menu-toggle").click(function (e) {
     $("#wrapper").toggleClass("toggled");
 
   // sidebar arrow toggle direction
-    if ( $("#menu-toggle-icon").hasClass("glyphicon glyphicon-menu-right") ) {
-      $("#menu-toggle-icon").removeClass("glyphicon glyphicon-menu-right").addClass("glyphicon glyphicon-menu-left");
+    if ( $("#menu-toggle button i").hasClass("fa-angle-double-right") ) {
+      $("#menu-toggle button i").removeClass("fa-angle-double-right").addClass("fa-angle-double-left");
     } else {
-      $("#menu-toggle-icon").removeClass("glyphicon glyphicon-menu-left").addClass("glyphicon glyphicon-menu-right");
+      $("#menu-toggle button i").removeClass("fa-angle-double-left").addClass("fa-angle-double-right");
     }
 });
 
