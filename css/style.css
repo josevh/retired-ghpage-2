@@ -1,0 +1,8 @@
+body {
+}
+
+#avatar {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 0;
+}
