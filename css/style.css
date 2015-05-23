@@ -22,10 +22,12 @@ body {
 ------------------------------ */
 #wrapper #sidebar-wrapper {
   width: 250px;
+  overflow: hidden;
 }
 
 #wrapper.toggled #sidebar-wrapper {
     width: 50px;
+    overflow: hidden;
 }
 
 #wrapper {
