@@ -24,6 +24,10 @@ body {
     overflow:hidden;
 }
 
+.sidebar-brand.large {
+height: 100%;
+}
+
 
 /*------------------------------
             sidebar
