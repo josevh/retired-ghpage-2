@@ -2,6 +2,11 @@
 /*global $ */
 
 $("#menu-toggle").click(function (e) {
+  // avatar enlarges
+    $("#avatar").attr('src', 'img/avatar.jpg');
+    $("#avatar").fadeIn('400');
+    $("#avatar").toggleClass("large");
+    
   // toggle show/hide sidebar
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
@@ -12,6 +17,8 @@ $("#menu-toggle").click(function (e) {
     } else {
       $("#menu-toggle button i").removeClass("fa-angle-double-left").addClass("fa-angle-double-right");
     }
+    
+
 });
 
 $(document).ready(function(){

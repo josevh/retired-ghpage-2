@@ -10,10 +10,18 @@ body {
     background-color: transparent; /* override bootstrap */
 }
 
-#avatar {
+/*#avatar {
     border-radius: 6px;
     overflow: hidden;
     border: 0;
+} */
+
+#avatar.large {
+    width: 230px;
+    height:230px;
+    border: 2px solid #333333;
+    border-radius: 6px;
+    overflow:hidden;
 }
 
 
