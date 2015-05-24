@@ -21,8 +21,8 @@ body {
             sidebar
 ------------------------------ */
 #wrapper #sidebar-wrapper {
-  width: 250px;
-  overflow: hidden;
+    width: 250px;
+    overflow: hidden;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -31,7 +31,7 @@ body {
 }
 
 #wrapper {
-  padding-left: 250px;
+    padding-left: 250px;
 }
 
 #wrapper.toggled {
@@ -59,32 +59,33 @@ body {
 }
 
 .list-inline {
-  margin-left: -25px;
+    margin-left: -25px;
+    vertical-align: middle;
 }
 
 .list-inline li:first-child {
-  width: 50px;
+    width: 50px;
 }
 
 .list-inline li:nth-child(2){
-  width: 73%;
-  padding: 0;
-  margin: 0;
+    width: 73%;
+    padding: 0;
+    margin: 0;
 }
 
 .list-inline li:nth-child(2) a{
-  margin-left: -15px;
-  color: #999999;
-  height: 100%;
-  width: 100%;
+    margin-left: -15px;
+    color: #999999;
+    height: 100%;
+    width: 100%;
 }
 
 .list-inline li:nth-child(2) a:hover{
-  color: #333333;
+    color: #333333;
 }
 
 .list-inline li:nth-child(2):hover{
-  background-color: transparent;
+    background-color: transparent;
 }
 
 /*------------------------------
@@ -93,9 +94,9 @@ body {
 
 /* positioning and remove def. border, make bg match */
 .btn-nav {
-  border: 0;
-  margin-left: -15px;
-  background-color: transparent;
+    border: 0;
+    margin-left: -15px;
+    background-color: transparent;
 }
 
 /* avatar positioning */
@@ -106,15 +107,24 @@ body {
 
 /* clicked icons bg, no change; outline white */
 .btn-nav:focus {
-  background-color: transparent;
-  outline-color: white;
+    background-color: transparent;
+    outline-color: white;
 }
 
 /* make icon bg match */
 .btn-nav:hover {
-  background: transparent;
+    background: transparent;
 }
 /* make icons vis. on hover */
 .sidebar-nav li:hover {
     background: rgba(255,255,255,0.2);
 }
+
+/* correct colors for sidebar toggle arrow */
+i.fa-angle-double-right {
+    color: #999999;
+}
+i.fa-angle-double-left {
+    color: #999999;
+}
+/* TODO: change arrows :hover color #333333 */
