@@ -1,0 +1,23 @@
+/* 
+* Customizations to theme.
+* Author: Jose H.
+* Github: http://josevh.com
+*/
+
+body {
+	background-image: url(../img/grandcanyon2.jpg);
+}
+
+
+
+a h6{
+	color: #0480D3;
+}
+
+a {
+    color: #0480D3;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border-left: 5px solid #0480D3;
+}
