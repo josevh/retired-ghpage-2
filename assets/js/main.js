@@ -29,7 +29,7 @@ $(window).load(function() {
       preload([
     // 'assets/img/gc1-min.jpg',
     'assets/img/gap1-min.jpg',
-    'assets/img/flower1-min.jpg',
+    'assets/img/mac-min.jpg',
     'assets/img/peacock1-min.jpg'
     ]);
 });
