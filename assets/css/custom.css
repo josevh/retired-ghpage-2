@@ -28,8 +28,7 @@ a {
 }
 
 #interests {
-    list-style-type: none;
-    padding-left: 25px;
+    margin-left: 20px;
 }
 
 #interests li i {
