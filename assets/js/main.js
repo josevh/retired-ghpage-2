@@ -14,7 +14,7 @@ $(document).ready(function(){
                 $('body').css('background-image', 'url(assets/img/gap1-min.jpg)');
                 break;
             case '#portfolio':
-                $('body').css('background-image', 'url(assets/img/flower1-min.jpg)');
+                $('body').css('background-image', 'url(assets/img/mac-min.jpg)');
                 break;
             case '#contact':
                 $('body').css('background-image', 'url(assets/img/peacock1-min.jpg)');
