@@ -38,3 +38,13 @@ a {
 p {
   margin-bottom: 20px;
 }
+
+/*content area*/
+.tab-content {
+    padding: 20px 15px;
+}
+
+/*fix placement of name*/
+#about > h3 {
+    margin-top: 10px;
+}
