@@ -163,3 +163,10 @@ grey {
 	color: #bdc3c7;
 	font-weight: 700;
 }
+
+.carousel-caption {
+    background-color: #BCBCBC;
+    background-color: rgba(114, 114, 114, 0.65);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
