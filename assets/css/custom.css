@@ -57,3 +57,8 @@ p {
     margin-bottom: 15px;
     border-radius: 3px;
 }
+
+ /*make modal footer shorter */
+.modal-footer {
+    padding: 5px 15px;
+}
