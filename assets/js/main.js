@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
     
     $('#myTab > li').click(function () {
-        if ($( window ).width() > 768) {
+        if ($( window ).width() >= 768) {
             switch ($(this).children('a').attr('href')) {
                 case '#about':
                     $('body').css('background-image', 'url(assets/img/gc1-min.jpg)');
