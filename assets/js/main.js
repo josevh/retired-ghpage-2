@@ -6,22 +6,25 @@ $(document).ready(function(){
     });
     
     $('#myTab > li').click(function () {
-        switch ($(this).children('a').attr('href')) {
-            case '#about':
-                $('body').css('background-image', 'url(assets/img/gc1-min.jpg)');
-                break;
-            case '#profile':
-                $('body').css('background-image', 'url(assets/img/mac-min.jpg)');
-                break;
-            case '#portfolio':
-                $('body').css('background-image', 'url(assets/img/desk-min.jpg)');
-                break;
-            case '#contact':
-                $('body').css('background-image', 'url(assets/img/gap1-min.jpg)');
-                break;
-            default:
-                // code
+        if ($( window ).width() > 768) {
+            switch ($(this).children('a').attr('href')) {
+                case '#about':
+                    $('body').css('background-image', 'url(assets/img/gc1-min.jpg)');
+                    break;
+                case '#profile':
+                    $('body').css('background-image', 'url(assets/img/mac-min.jpg)');
+                    break;
+                case '#portfolio':
+                    $('body').css('background-image', 'url(assets/img/desk-min.jpg)');
+                    break;
+                case '#contact':
+                    $('body').css('background-image', 'url(assets/img/gap1-min.jpg)');
+                    break;
+                default:
+                    // code
+            }    
         }
+        
     });
 });
 
