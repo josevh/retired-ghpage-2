@@ -18,7 +18,7 @@ $(document).ready(function(){
                     $('body').css('background-image', 'url(assets/img/desk-min.jpg)');
                     break;
                 case '#contact':
-                    $('body').css('background-image', 'url(assets/img/gap1-min.jpg)');
+                    $('body').css('background-image', 'url(assets/img/rain-min.jpg)');
                     break;
                 default:
                     // code
@@ -31,7 +31,7 @@ $(document).ready(function(){
 $(window).load(function() {
       preload([
     // 'assets/img/gc1-min.jpg',
-    'assets/img/gap1-min.jpg',
+    'assets/img/rain-min.jpg',
     'assets/img/mac-min.jpg',
     'assets/img/peacock1-min.jpg'
     ]);
