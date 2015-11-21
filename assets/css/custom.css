@@ -31,8 +31,8 @@ a {
     cursor: pointer;
 }
 
-#interests {
-    margin-left: 15px;
+#interests > div:nth-child(n+2) {
+    margin-top:5px;
 }
 
 #interests li i {
