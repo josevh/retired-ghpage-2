@@ -26,7 +26,7 @@ $(document).ready(function(){
                     $('body').css('background-image', 'url(assets/img/rain-min.jpg)');
                     break;
                 default:
-                    // code
+                    $('body').css('background-image', 'url(assets/img/gc1-min.jpg)');
             }    
         }
         
