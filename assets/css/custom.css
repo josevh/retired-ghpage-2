@@ -29,10 +29,11 @@ a {
 
 #credit > i {
     cursor: pointer;
+    color: #0480D3;
 }
 
 #credit > i:hover {
-    color: #0480D3;
+    color: #555555;
 }
 
 #interests > div:nth-child(n+2) {
