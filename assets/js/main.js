@@ -15,7 +15,7 @@ $(document).ready(function(){
         $('img[data-lazy-src]').each(function() {
             $(this).attr('src', $(this).attr('data-lazy-src'));
         });
-    }, 3000);
+    }, 2000);
     
     
     
