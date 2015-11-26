@@ -36,6 +36,10 @@ a {
     color: #555555;
 }
 
+#interests {
+    padding-left: 25px;
+}
+
 #interests > div:nth-child(n+2) {
     margin-top:5px;
 }
