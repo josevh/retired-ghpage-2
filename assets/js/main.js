@@ -10,6 +10,15 @@ $(document).ready(function(){
         $(this).tab('show');
     });
     
+    // lazy load portfolio images
+    setTimeout(function(){
+        $('img[data-lazy-src]').each(function() {
+            $(this).attr('src', $(this).attr('data-lazy-src'));
+        });
+    }, 3000);
+    
+    
+    
     // $('#myTab > li').click(function () {
     //     if ($( window ).width() >= 768) {
     //         switch ($(this).children('a').attr('href')) {
