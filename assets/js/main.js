@@ -1,8 +1,8 @@
 $(document).ready(function(){
     
-    $("#credit").click(function(){
+    $("#credit i").click(function(){
         var credit = 'Design derivative of <a href="http://www.blacktie.co/2013/10/victoria-simple-vcard/" target="_blank" >Victora Simple vCard</a> by <a href="http://www.blacktie.co/" target="_blank">BlackTie.co</a> used under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.';
-        $(this).html(credit);
+        $(this).parent('p').html(credit);
     });
     
     $('#myTab a').click(function (e) {
