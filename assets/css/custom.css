@@ -22,17 +22,21 @@ a {
 }
 
 #credit {
+    margin-top: 40px;
+}
+
+#credit p {
     font-size: 10px;
     padding: 0;
     margin: 0;
 }
 
-#credit > i {
+#credit i {
     cursor: pointer;
     color: #0480D3;
 }
 
-#credit > i:hover {
+#credit i:hover {
     color: #555555;
 }
 
