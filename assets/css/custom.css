@@ -89,3 +89,7 @@ p {
 i.fa {
     vertical-align: inherit;
 }
+
+#portfolio > .row {
+   padding-top: 20px;
+}
