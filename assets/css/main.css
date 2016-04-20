@@ -62,23 +62,28 @@ body {
     }
 
 /* TODO: create content div class? */
-/* panel: home */
-    /* position image vertically */
-    div#avatar{
-        padding-top: 50px;
-    }
-    /* round image */
-    div#avatar > img {
-        border-radius: 50%;
-        max-width: 16%;
-    }
-    /* position text vertically */
-    #home-content {
-        padding-bottom: 100px;
-    }
-/* panel: skills */
-    /* position content vertically */
-    #skills-content {
+/* panels */
+    .panel-content {
         padding-top: 35px;
         padding-bottom: 70px;
     }
+    /* panel: home */
+        /* position image vertically */
+        div#avatar{
+            padding-top: 50px;
+        }
+        /* round image */
+        div#avatar > img {
+            border-radius: 50%;
+            max-width: 16%;
+        }
+        /* position text vertically */
+        #home-content {
+            padding-bottom: 100px;
+        }
+    /* panel: skills */
+        /* position content vertically */
+        #skills-content {
+            /*padding-top: 35px;
+            padding-bottom: 70px;*/
+        }
