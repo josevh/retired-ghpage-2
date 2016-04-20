@@ -61,7 +61,8 @@ body {
         padding-bottom: 15px; /* match bootstrap anchor padding */
     }
 
-/* home panel */
+/* TODO: create content div class? */
+/* panel: home */
     /* position image vertically */
     div#avatar{
         padding-top: 50px;
@@ -72,6 +73,12 @@ body {
         max-width: 16%;
     }
     /* position text vertically */
-    #home-message {
+    #home-content {
         padding-bottom: 100px;
+    }
+/* panel: skills */
+    /* position content vertically */
+    #skills-content {
+        padding-top: 35px;
+        padding-bottom: 70px;
     }
