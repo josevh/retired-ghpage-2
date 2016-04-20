@@ -22,9 +22,9 @@
       			<script src="assets/js/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbar">
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar-custom">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -37,8 +37,8 @@
             <div id="navbar" class="navbar-collapse collapse navbar-custom">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#home"><span>HOME</span></a></li>
-                <li><a href="#about"><span>ABOUT</span></a></li>
-                <li><a href="#profile"><span>PROFILE</span></a></li>
+                <!-- <li><a href="#about"><span>ABOUT</span></a></li> -->
+                <li><a href="#skills"><span>SKILLS</span></a></li>
                 <li><a href="#goals"><span>GOALS</span></a></li>
                 <li><a href="#portfolio"><span>PORTFOLIO</span></a></li>
                 <li><a href="#contact"><span>CONTACT</span></a></li>
@@ -47,21 +47,24 @@
           </div>
         </nav>
 
+        <!-- ===== Home Panel ===== -->
         <div id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="panel panel-default">
                             <div class="panel-body text-center">
-                                <div id="avatar" class="col-sm-12">
-                                    <img id="avatar" src="assets/img/avatar.jpg" alt="">
-                                </div>
-                                <div id="home-message" class="col-sm-8 col-sm-offset-2 text-muted">
-                                    <h2>Jose Herrera</h2>
-                                    <h4 class="text-muted">IT Technician & Striving Developer</h4>
-                                    <br>
-                                    <p>From my first computer to my most recent, there has been a non-stop fascination which has lead me to pursue a career in IT and development.</p>
-                                    <p>I'm currently studying Computer Science and working in a NOC environment affording me the opportunity to learn something new every day.</p>
+                                <div id="home-content" class="row">
+                                    <div id="avatar" class="col-sm-12">
+                                        <img id="avatar" src="assets/img/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-8 col-sm-offset-2 text-muted">
+                                        <h2>Jose Herrera</h2>
+                                        <h4 class="text-muted">IT Technician & Striving Developer</h4>
+                                        <br>
+                                        <p>From my first computer to my most recent, there has been a non-stop fascination which has lead me to pursue a career in IT and development.</p>
+                                        <p>I'm currently studying Computer Science and working in a NOC environment affording me the opportunity to learn something new every day.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -69,6 +72,72 @@
                 </div>
             </div><!-- /.container -->
         </div><!-- /#home -->
+
+        <!-- ===== Skills Panel ===== -->
+        <div id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="panel panel-default">
+                            <div class="panel-body text-center">
+                                <div id="skills-content" class="row text-muted">
+                                    <div class="col-sm-5 col-sm-offset-1">
+                                        <h3>Development</h3>
+                                        <br>
+                                        <h4 class="text-left">HTML & CSS <span class="small">Bootstrap</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                        <h4 class="text-left">PHP <span class="small">(Laravel MVC)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                        <h4 class="text-left">JAVA, C++, Python</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 80%"></div>
+                                        </div>
+                                        <h4 class="text-left">MySQL & Oracle DB <span class="small">(PL/SQL)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 75%"></div>
+                                        </div>
+                                        <h4 class="text-left">JS <span class="small">(jQuery)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <h3>IT</h3>
+                                        <br>
+                                        <h4 class="text-left">Jira & Confluence <span class="small">(Ticketing and documentation)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 85%"></div>
+                                        </div>
+                                        <h4 class="text-left">VM <span class="small">(Virtualbox, Xenserver)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 75%"></div>
+                                        </div>
+                                        <h4 class="text-left">Zabbix <span class="small">(Monitoring)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                        <h4 class="text-left">Adobe Creative <span class="small">(Photoshop, Lightroom, Illustrator)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 65%"></div>
+                                        </div>
+                                        <h4 class="text-left">OS <span class="small">(Windows 7,8,10 & Linux Ubuntu/Debian)</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active progress-bar-info" role="progressbar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /#skills -->
+
+        
 
 
         <!-- Bootstrap core JavaScript
