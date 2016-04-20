@@ -1,0 +1,64 @@
+/* set font */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* set background color */
+body {
+    background-color: #f2f2ed;
+}
+
+/* center navbar when not collapsed */
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* custom navbar */
+    /* custom color bg and text */
+    .navbar-custom {
+        background-color: #2196F3;
+        /*color: #ffffff;*/
+        /*border-radius: 0;*/
+    }
+    /* custom default opacity */
+    .navbar-custom .navbar-nav > li > a { /* nav links default */
+        color:#ffffff;
+        opacity: 0.75;
+    }
+    /* override bootstrap active nav link style */
+    .navbar-custom .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: #ffffff !important;
+        background-color: transparent !important;
+    }
+    .navbar-custom .navbar-nav > li > a:focus,
+    .navbar-custom .navbar-nav > li > a:hover {
+    }
+    /* set colors for active and hover/focus nav links */
+    .navbar-custom .navbar-nav > li > a:focus,
+    .navbar-custom .navbar-nav > li > a:hover,
+    .navbar-custom .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        opacity: 1.0;
+    }
+    /* set bottom border for active and hover/focus nav links
+     * constrains border to link text width */
+    .navbar-custom .navbar-nav > li > a > span:focus,
+    .navbar-custom .navbar-nav > li > a > span:hover,
+    .navbar-custom .navbar-nav > .active > a > span,
+    .navbar-nav > .active > a > span:hover,
+    .navbar-nav > .active > a > span:focus {
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 15px;
+    }
