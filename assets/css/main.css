@@ -6,22 +6,22 @@ html, body {
 /* set background color */
 body {
     background-color: #f2f2ed;
-}
-
-/* center navbar when not collapsed */
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+    margin-top: 150px; /* prevent nav obstructing body view */
 }
 
 /* custom navbar */
+    /* center navbar when not collapsed */
+    @media (min-width: 768px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
     /* custom color bg and text */
     .navbar-custom {
         background-color: #2196F3;
@@ -61,4 +61,19 @@ body {
     .navbar-nav > .active > a > span:focus {
         border-bottom: 2px solid #ffffff;
         padding-bottom: 15px; /* match bootstrap anchor padding */
+    }
+
+/* home panel */
+    div#avatar{
+        padding-top: 50px;
+    }
+    div#avatar > img {
+        border-radius: 50%;
+        max-width: 16%;
+        /*position: relative;
+        bottom: 85px;*/
+    }
+
+    #home-message {
+        padding-bottom: 100px;
     }
