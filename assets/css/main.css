@@ -73,7 +73,6 @@ body {
         }
         /* round image */
         div#avatar > img {
-            border-radius: 50%;
             max-width: 16%;
         }
         /* position text vertically */
@@ -141,3 +140,12 @@ body {
             margin-top: 10px;
         }
     }
+
+/* Portfolio panel, equal height panels  on >md windows size */
+@media only screen and (min-width: 990px) {
+        .equal, .equal > div[class*='col-'] {
+        display: -webkit-flex;
+        display: flex;
+        flex:1 1 auto;
+    }
+}
