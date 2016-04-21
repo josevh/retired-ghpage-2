@@ -16,7 +16,7 @@ $(document).ready(function(){
             $('.'+theClass).parent('li').addClass('active');
             //Animate
             $('html, body').stop().animate({
-                scrollTop: $( $(this).attr('href') ).offset().top - 160
+                scrollTop: $( $(this).attr('href') ).offset().top - 70
             }, 400);
             return false;
         });
