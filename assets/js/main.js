@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $('body').scrollspy({ target: '#navbar' })
+    $('body').scrollspy({
+        target: '#navbar',
+        offset: 125
+    })
 
     // Smooth Scrolling
     // http://codepen.io/mattsince87/pen/exByn
@@ -32,7 +35,7 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').hover(function(){
         $(this).tooltip();
     });
-    
+
 });
 
 /* Google Maps callback function */
