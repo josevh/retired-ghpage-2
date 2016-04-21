@@ -37,11 +37,11 @@ $(document).ready(function(){
 
 /* Google Maps callback function */
 window.initMap = function() {
-    var var_location = new google.maps.LatLng(34.0911499,-118.3054671);
+    var var_location = new google.maps.LatLng(34.0799731,-118.2936974);
 
     var var_mapoptions = {
         center: var_location,
-        zoom: 14
+        zoom: 12
     };
 
     // var var_marker = new google.maps.Marker({
