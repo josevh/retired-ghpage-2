@@ -20,4 +20,11 @@ $(document).ready(function(){
         $('.scrollTop a').scrollTop();
     }
     scrollNav();
+
+    // lazy load portfolio images
+    setTimeout(function(){
+        $('img[data-lazy-src]').each(function() {
+            $(this).attr('src', $(this).attr('data-lazy-src'));
+        });
+    }, 2000);
 });

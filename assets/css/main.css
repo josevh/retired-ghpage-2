@@ -141,11 +141,24 @@ body {
         }
     }
 
-/* Portfolio panel, equal height panels  on >md windows size */
-@media only screen and (min-width: 990px) {
-        .equal, .equal > div[class*='col-'] {
-        display: -webkit-flex;
-        display: flex;
-        flex:1 1 auto;
+/* Portfolio panel */
+    /* equal height panels  on >md windows size */
+    @media only screen and (min-width: 990px) {
+            .equal, .equal > div[class*='col-'] {
+            display: -webkit-flex;
+            display: flex;
+            flex:1 1 auto;
+        }
     }
-}
+
+    /* remove extra borders on project panels */
+    div.thumbnail {
+        border: none;
+    }
+    /* style :hover and :focus for project link */
+    a.thumbnail:hover,
+    a.thumbnail:focus  {
+        text-decoration: none;
+        border-color: rgba(42, 117, 231, 0.5);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(104, 186, 238, 0.6);
+    }

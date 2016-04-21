@@ -43,7 +43,6 @@
                 <li><a href="#goals"><span>GOALS</span></a></li>
                 <li><a href="#portfolio"><span>PORTFOLIO</span></a></li>
                 <li><a href="#work"><span>WORK</span></a></li>
-                <li><a href="#portfolio"><span>PORTFOLIO</span></a></li>
                 <li><a href="#contact"><span>CONTACT</span></a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -59,7 +58,7 @@
                             <div class="panel-body text-center">
                                 <div id="home-content" class="row panel-content">
                                     <div id="avatar" class="col-sm-12">
-                                        <img id="avatar" class="img-circle" src="assets/img/avatar.jpg" alt="">
+                                        <img id="avatar" class="img-circle" src="assets/img/avatar.jpg" alt="avatar">
                                     </div>
                                     <div class="col-sm-8 col-sm-offset-2 text-muted">
                                         <h2>Jose Herrera</h2>
@@ -203,43 +202,51 @@
                                             <div class="row equal">
 
                                                 <div class="col-xs-6 col-md-3">
-                                                    <div class="thumbnail">
-                                                        <img src="assets/img/portfolio/nocdash/NOC-Dash-thumb-min.png" alt="" class="portfolio-thumb">
-                                                        <div class="caption">
-                                                            <h4 class="text-muted">NOC Dashboard</h4>
-                                                            <p class="small text-muted">Dashboard for NOC team to track alerts, issues, incidents, shift reports, and reporting metrics.</p>
+                                                    <a href="#NOCDash-modal" class="thumbnail" data-toggle="modal">
+                                                        <div class="thumbnail">
+                                                            <img src="assets/img/portfolio/nocdash/NOC-Dash-thumb-min.png" alt="NOC Dash thumbnail" class="portfolio-thumb">
+                                                            <div class="caption">
+                                                                <h4 class="text-muted">NOC Dashboard</h4>
+                                                                <p class="small text-muted">Dashboard for NOC team to track alerts, issues, incidents, shift reports, and reporting metrics.</p>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
 
                                                 <div class="col-xs-6 col-md-3">
-                                                    <div class="thumbnail">
-                                                        <img src="assets/img/p02.png" alt="" class="portfolio-thumb">
-                                                        <div class="caption">
-                                                            <h4 class="text-muted">SpotToPhones</h4>
-                                                            <p class="small text-muted">Program to parse Spotify playlist of choice and communicate its contents to Headphones app.</p>
+                                                    <a href="https://github.com/josevh/SpotToPhones" class="thumbnail" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src="assets/img/p02.png" alt="SpotToPhones thumbnail" class="portfolio-thumb">
+                                                            <div class="caption">
+                                                                <h4 class="text-muted">SpotToPhones</h4>
+                                                                <p class="small text-muted">Program to parse Spotify playlist of choice and communicate its contents to Headphones app.</p>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
 
                                                 <div class="col-xs-6 col-md-3">
-                                                    <div class="thumbnail">
-                                                        <img src="assets/img/portfolio/wpm-to-zabbix/wpm-to-zabbix-thumb.gif" alt="" class="portfolio-thumb">
-                                                        <div class="caption">
-                                                            <h4 class="text-muted">WPM to Zabbix</h4>
-                                                            <p class="small text-muted">Zabbix external script written in Python to integrate Neustar <abbr title="Web Performance Monitoring" class="initialism">WPM</abbr> into monitoring.</p>
+                                                    <a href="https://github.com/josevh/WPM-to-Zabbix" class="thumbnail" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src="assets/img/portfolio/wpm-to-zabbix/wpm-to-zabbix-thumb.gif" alt="WPM to Zabbix thumbnail" class="portfolio-thumb">
+                                                            <div class="caption">
+                                                                <h4 class="text-muted">WPM to Zabbix</h4>
+                                                                <p class="small text-muted">Zabbix external script written in Python to integrate Neustar <abbr title="Web Performance Monitoring" class="initialism">WPM</abbr> into monitoring.</p>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
 
                                                 <div class="col-xs-6 col-md-3">
-                                                    <div class="thumbnail">
-                                                        <img src="assets/img/p01.png" alt="" class="portfolio-thumb">
-                                                        <div class="caption">
-                                                            <h4 class="text-muted">WPM Zabbix Module</h4>
-                                                            <p class="small text-muted">Zabbix Module written in C to access Neustar <abbr title="Web Performance Monitoring" class="initialism">WPM</abbr> data and import it into Zabbix.</p>
+                                                    <a href="https://github.com/josevh/zbx-module-neustar-wpm" class="thumbnail" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src="assets/img/p01.png" alt="WPM Zabbix Module thumbnail" class="portfolio-thumb">
+                                                            <div class="caption">
+                                                                <h4 class="text-muted">WPM Zabbix Module</h4>
+                                                                <p class="small text-muted">Zabbix Module written in C to access Neustar <abbr title="Web Performance Monitoring" class="initialism">WPM</abbr> data and import it into Zabbix.</p>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
 
                                             </div>
@@ -321,6 +328,105 @@
                 </div>
             </div><!-- /.container -->
         </div><!-- /#work -->
+
+        <!-- Modal / NOCDash Portfolio Entry -->
+        <div class="modal fade" id="NOCDash-modal" tabindex="-1" role="dialog" aria-labelledby="NOCDash-modal-label">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button>
+                        <h4 class="modal-title" id="NOCDash-modal-label">NOC Dashboard for Forever 21</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-nocdash" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-nocdash" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="1"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="2"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="1"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="2"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="1"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="2"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="1"></li>
+                                <li data-target="#carousel-nocdash" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Dash-min.png" alt="NOC Dashboard Home">
+                                    <div class="carousel-caption small">
+                                        Home page for Dashboard
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Alerts-min.png" alt="NOC Alerts">
+                                    <div class="carousel-caption small">
+                                        Alerts pulled via API from Zabbix.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Incidents-min.png" alt="NOC Incidents">
+                                    <div class="carousel-caption small">
+                                        Incidents pulled from via API from JIRA.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Jira-min.png" alt="NOC Ticket Submission Form">
+                                    <div class="carousel-caption small">
+                                        JIRA Tickets submitted to JIRA via AJAX and API.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Jira_2-min.png" alt="NOC IRC Logs">
+                                    <div class="carousel-caption small">
+                                        Submission form for JIRA tickets, semi-automated.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Reporting-min.png" alt="NOC Reporting Form">
+                                    <div class="carousel-caption small">
+                                        Pull database (MySQL) data based on query built from form. Prepared query on NOC SLA response times.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Shift_Reports-min.png" alt="NOC Reporting Form">
+                                    <div class="carousel-caption small">
+                                        Shift reports are stored on SQLite DB. Form and report navigator.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Auth-min.png" alt="NOC Dashboard Login">
+                                    <div class="carousel-caption small">
+                                        Login form for user accounts.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="#" data-lazy-src="assets/img/portfolio/nocdash/NOC-Account-min.png" alt="NOC Account Management">
+                                    <div class="carousel-caption small">
+                                        Account management with Admin-only panels.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-nocdash" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-nocdash" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- carousel caption -->
+                        <span class="pull-right small">* Confidential data is blurred.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- JavaScript
             ================================================== -->
