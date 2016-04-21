@@ -5,7 +5,7 @@ html, body {
 
 /* set background color */
 body {
-    background-color: #f2f2ed;
+    background-color: #dbdbd6;
     margin-top: 125px; /* prevent nav obstructing body view */
 }
 
@@ -61,7 +61,6 @@ body {
         padding-bottom: 15px; /* match bootstrap anchor padding */
     }
 
-/* TODO: create content div class? */
 /* panels */
     .panel-content {
         padding-top: 35px;
@@ -87,3 +86,31 @@ body {
             /*padding-top: 35px;
             padding-bottom: 70px;*/
         }
+
+/* Timeline */
+    /* .cd-timeline-img background color for f21 */
+    .cd-timeline-img-work {
+        background: #31708F;
+    }
+    @media only screen and (min-width: 1170px) {
+        .cd-timeline-img {
+            width: 40px;
+            height: 40px;
+            margin-left: -20px;
+            margin-top: 10px;
+        }
+    }
+    /* center content vertically, override bootstrap */
+    .cd-timeline-content > h2 {
+        margin-top: 10px;
+    }
+    .panel-timeline {
+        background-color: transparent;
+    }
+    /* timeline vertical bar color */
+    #cd-timeline::before {
+        background-color: #c1c1c1;
+    }
+    .cd-timeline-img {
+            box-shadow: none;
+    }
