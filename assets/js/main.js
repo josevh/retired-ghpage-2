@@ -27,4 +27,34 @@ $(document).ready(function(){
             $(this).attr('src', $(this).attr('data-lazy-src'));
         });
     }, 2000);
+
+    // show tooltips on hover
+    $('[data-toggle="tooltip"]').hover(function(){
+        $(this).tooltip();
+    });
+
 });
+
+/* Google Maps callback function */
+window.initMap = function() {
+    var var_location = new google.maps.LatLng(34.0911499,-118.3054671);
+
+    var var_mapoptions = {
+        center: var_location,
+        zoom: 14
+    };
+
+    // var var_marker = new google.maps.Marker({
+    //     position: var_location,
+    //     map: var_map,
+    //     title:"Hollywood"});
+    // var_marker.setVisible(false);
+
+    var var_map = new google.maps.Map(document.getElementById("map-container"),
+    var_mapoptions);
+
+    var_marker.setMap(var_map);
+
+    }
+
+    //  google.maps.event.addDomListener(window, 'load', init_map);
