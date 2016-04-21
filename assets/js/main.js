@@ -1,60 +1,62 @@
 $(document).ready(function(){
-    
-    $("#credit i").click(function(){
-        var credit = 'Design derivative of <a href="http://www.blacktie.co/2013/10/victoria-simple-vcard/" target="_blank" >Victora Simple vCard</a> by <a href="http://www.blacktie.co/" target="_blank">BlackTie.co</a> used under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.';
-        $(this).parent('p').html(credit);
-    });
-    
-    $('#myTab a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
-    
+    $('body').scrollspy({
+        target: '#navbar',
+        offset: 125
+    })
+
+    // Smooth Scrolling
+    // http://codepen.io/mattsince87/pen/exByn
+    // TODO: fix inconsistency with scrollspy
+    function scrollNav() {
+        $('.nav a').click(function(){
+            //Toggle Class
+            $(".active").removeClass("active");
+            $(this).closest('li').addClass("active");
+            var theClass = $(this).attr("class");
+            $('.'+theClass).parent('li').addClass('active');
+            //Animate
+            $('html, body').stop().animate({
+                scrollTop: $( $(this).attr('href') ).offset().top - 70
+            }, 400);
+            return false;
+        });
+        $('.scrollTop a').scrollTop();
+    }
+    scrollNav();
+
     // lazy load portfolio images
     setTimeout(function(){
         $('img[data-lazy-src]').each(function() {
             $(this).attr('src', $(this).attr('data-lazy-src'));
         });
     }, 2000);
-    
-    
-    
-    // $('#myTab > li').click(function () {
-    //     if ($( window ).width() >= 768) {
-    //         switch ($(this).children('a').attr('href')) {
-    //             case '#about':
-    //                 $('body').css('background-image', 'url(assets/img/gc1-min.jpg)');
-    //                 break;
-    //             case '#profile':
-    //                 $('body').css('background-image', 'url(assets/img/mac-min.jpg)');
-    //                 break;
-    //             case '#portfolio':
-    //                 $('body').css('background-image', 'url(assets/img/desk-min.jpg)');
-    //                 break;
-    //             case '#contact':
-    //                 $('body').css('background-image', 'url(assets/img/rain-min.jpg)');
-    //                 break;
-    //             default:
-    //                 $('body').css('background-image', 'url(assets/img/gc1-min.jpg)');
-    //         }    
-    //     }
-        
-    // });
+
+    // show tooltips on hover
+    $('[data-toggle="tooltip"]').hover(function(){
+        $(this).tooltip();
+    });
+
 });
 
-// $(window).load(function() {
-//       preload([
-//     // 'assets/img/gc1-min.jpg',
-//     'assets/img/rain-min.jpg',
-//     'assets/img/mac-min.jpg',
-//     'assets/img/peacock1-min.jpg'
-//     ]);
-// });
+/* Google Maps callback function */
+window.initMap = function() {
+    var var_location = new google.maps.LatLng(34.0799731,-118.2936974);
 
-// function preload(arrayOfImages) {
-//     $(arrayOfImages).each(function(){
-//         // $('<img/>')[0].src = this;
-//         // Alternatively you could use:
-//         (new Image()).src = this;
-//     });
-// }
+    var var_mapoptions = {
+        center: var_location,
+        zoom: 12
+    };
+
+    // var var_marker = new google.maps.Marker({
+    //     position: var_location,
+    //     map: var_map,
+    //     title:"Hollywood"});
+    // var_marker.setVisible(false);
+
+    var var_map = new google.maps.Map(document.getElementById("map-container"),
+    var_mapoptions);
+
+    // var_marker.setMap(var_map);
+
+    }
+    //  google.maps.event.addDomListener(window, 'load', init_map);
