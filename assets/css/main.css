@@ -1,165 +1,183 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: Victoria vCard - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
+/* set font */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
 
+/* set background color */
 body {
-  	background-color: #f2f2f2;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-    padding-top: 150px;
-    
-	background-image: url(../img/header-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-  }
-
-/* Titles */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
-    font-weight: 300;
-    color: #333;
+    background-color: #E0E0E0;
+    margin-top: 125px; /* prevent nav obstructing body view */
 }
 
+/* custom navbar */
+    /* center navbar when not collapsed */
+    @media (min-width: 768px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
 
-/* Paragraph & Typographic */
-p {
-    line-height: 28px;
-    margin-bottom: 25px;
-}
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    /* custom color bg and text */
+    .navbar-custom {
+        background-color: #2196F3;
+    }
+    /* custom default opacity */
+    .navbar-custom .navbar-nav > li > a { /* nav links default */
+        color:#ffffff;
+        opacity: 0.75;
+    }
+    /* override bootstrap active nav link style */
+    .navbar-custom .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: #ffffff !important;
+        background-color: transparent !important;
+    }
+    .navbar-custom .navbar-nav > li > a:focus,
+    .navbar-custom .navbar-nav > li > a:hover {
+    }
+    /* set colors for active and hover/focus nav links */
+    .navbar-custom .navbar-nav > li > a:focus,
+    .navbar-custom .navbar-nav > li > a:hover,
+    .navbar-custom .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        opacity: 1.0;
+    }
+    /* set bottom border for active and hover/focus nav links
+     * constrains border to link text width */
+    .navbar-custom .navbar-nav > li > a > span:focus,
+    .navbar-custom .navbar-nav > li > a > span:hover,
+    .navbar-custom .navbar-nav > .active > a > span,
+    .navbar-nav > .active > a > span:hover,
+    .navbar-nav > .active > a > span:focus {
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 15px; /* match bootstrap anchor padding */
+    }
 
-.centered {
-    text-align: center;
-}
+/* panels */
+    .panel-content {
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
+    /* panel: home */
+        /* position image vertically */
+        div#avatar{
+            padding-top: 50px;
+        }
+        /* round image */
+        div#avatar > img {
+            max-width: 16%;
+        }
+        /* position text vertically */
+        #home-content {
+            padding-bottom: 100px;
+        }
+    /* panel: skills */
+        /* position content vertically */
+        #skills-content {
+            /*padding-top: 35px;
+            padding-bottom: 70px;*/
+        }
 
-/* Links */
-a {
-    color: #1abc9c;
-    word-wrap: break-word;
+/* Timeline */
+    /* .timeline points cd-timeline-img color */
+    .cd-timeline-img-work {
+        background: #64B5F6;
+    }
+    /* timeline points size and positioning */
+    @media only screen and (min-width: 1170px) {
+        .cd-timeline-img {
+            width: 40px;
+            height: 40px;
+            margin-left: -20px;
+            margin-top: 10px;
+        }
+    }
+    /* timeline content color  */
+    .cd-timeline-content {
+        background-color: #FFF176;
+    }
+    /* timeline content arrows, custom color */
+    .cd-timeline-content::before {
+        border-right-color: #FFF176;
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        border-right-color: #FFF176;
+    }
+    /* timeline content arrows, custom color */
+    @media only screen and (min-width: 1170px) {
+        .cd-timeline-content::before {
+            border-left-color: #FFF176;
+            border-right-color: transparent;
+        }
+        /*.cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+            border-right-color: #FFF176;
+        }*/
+    }
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
+    /* center content vertically, override bootstrap */
+    .cd-timeline-content > h2 {
+        margin-top: 10px;
+    }
+    /* timeline vertical bar color */
+    #cd-timeline::before {
+        background-color: #E0E0E0;
+    }
+    /* timeline points hide border */
+    .cd-timeline-img {
+            box-shadow: none;
+    }
 
-a:hover,
-a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-}
+    @media only screen and (min-width: 1170px) {
+        .cd-date {
+            margin-top: 10px;
+        }
+    }
 
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
+/* Portfolio panel */
+    /* equal height panels  on >md windows size */
+    @media only screen and (min-width: 990px) {
+            .equal, .equal > div[class*='col-'] {
+            display: -webkit-flex;
+            display: flex;
+            flex:1 1 auto;
+        }
+    }
 
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+    /* remove extra borders on project panels */
+    div.thumbnail {
+        border: none;
+    }
+    /* style :hover and :focus for project link */
+    a.thumbnail:hover,
+    a.thumbnail:focus  {
+        text-decoration: none;
+        border-color: rgba(42, 117, 231, 0.5);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(104, 186, 238, 0.6);
+    }
 
-.w {
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
-	-moz-box-shadow: 5px 5px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.2);
-	box-shadow: 5px 5px rgba(0,0,0,0.2);
-}
-
-
-.col-md-4 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.col-md-8 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-
-.nav-tabs {
-	border-bottom: 1px solid #dddddd;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-	color: #555555;
-	cursor: default;
-	background-color: #ffffff;
-	border-left: 5px solid #1abc9c;
-	border-bottom-color: transparent;
-	border-top-color: transparent;
-	border-right-color: transparent;
-	width: 100%;
-}
-
-.nav-tabs > li > a {
-	margin-right: 2px;
-	line-height: 1.428571429;
-	border-bottom: 1px solid #dddddd;
-	border-radius: 0 0 0 0;
-	width: 100%;
-	background-color: #f2f2f2;
-}
-
-.tab-content {
-	background-color: #ffffff;
-	padding-left: 15px;
-	padding-top: 20px;
-	padding-right: 15px;
-}
-
-.tab-content h5 {
-	color: #bdc3c7;
-	font-weight: 700;
-	letter-spacing: 1px;
-}
-
-.red i {
-	font-size: 12px;
-	color: #e74c3c;
-}
-
-i {
-	vertical-align: middle;
-}
-
-.sm {
-	font-size: 14px;
-}
-
-a h6{
-	color: #1abc9c;
-}
-
-a h6:hover {
-	color: #7b7b7b;
-}
-
-.grey {
-	color: #bdc3c7;
-	font-weight: 700;
-}
+/* Contact panel */
+    /* Google Maps div */
+    div#map-container {
+        height: 400px;
+    }
+    /* link icon positioning */
+    ul#contact-list {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    ul#contact-list > li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* remove bottom padding, maps end at panel edges */
+    #contact .panel-body {
+        padding-bottom: 0;
+    }
