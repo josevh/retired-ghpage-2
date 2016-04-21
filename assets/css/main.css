@@ -5,7 +5,7 @@ html, body {
 
 /* set background color */
 body {
-    background-color: #dbdbd6;
+    background-color: #E0E0E0;
     margin-top: 125px; /* prevent nav obstructing body view */
 }
 
@@ -88,10 +88,11 @@ body {
         }
 
 /* Timeline */
-    /* .cd-timeline-img background color for f21 */
+    /* .timeline points cd-timeline-img color */
     .cd-timeline-img-work {
-        background: #31708F;
+        background: #64B5F6;
     }
+    /* timeline points size and positioning */
     @media only screen and (min-width: 1170px) {
         .cd-timeline-img {
             width: 40px;
@@ -100,17 +101,43 @@ body {
             margin-top: 10px;
         }
     }
+    /* timeline content color  */
+    .cd-timeline-content {
+        background-color: #FFF176;
+    }
+    /* timeline content arrows, custom color */
+    .cd-timeline-content::before {
+        border-right-color: #FFF176;
+    }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        border-right-color: #FFF176;
+    }
+    /* timeline content arrows, custom color */
+    @media only screen and (min-width: 1170px) {
+        .cd-timeline-content::before {
+            border-left-color: #FFF176;
+            border-right-color: transparent;
+        }
+        /*.cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+            border-right-color: #FFF176;
+        }*/
+    }
+
     /* center content vertically, override bootstrap */
     .cd-timeline-content > h2 {
         margin-top: 10px;
     }
-    .panel-timeline {
-        background-color: transparent;
-    }
     /* timeline vertical bar color */
     #cd-timeline::before {
-        background-color: #c1c1c1;
+        background-color: #E0E0E0;
     }
+    /* timeline points hide border */
     .cd-timeline-img {
             box-shadow: none;
+    }
+
+    @media only screen and (min-width: 1170px) {
+        .cd-date {
+            margin-top: 10px;
+        }
     }
