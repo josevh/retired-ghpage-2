@@ -36,6 +36,10 @@ $(document).ready(function(){
         $(this).tooltip();
     });
 
+    // collapsed navbar: hide on click
+    $('.nav a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
 });
 
 /* Google Maps callback function */
