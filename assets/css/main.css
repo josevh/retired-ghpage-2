@@ -135,6 +135,9 @@ body {
     .cd-timeline-content > h2 {
         margin-top: 10px;
     }
+    .cd-timeline-content > h2 > small {
+        font-size: 75%;
+    }
     /* timeline vertical bar color */
     #cd-timeline::before {
         background-color: #E0E0E0;
@@ -143,10 +146,11 @@ body {
     .cd-timeline-img {
             box-shadow: none;
     }
-
+    /*position timeline dates and set font-size */
     @media only screen and (min-width: 1170px) {
-        .cd-date {
-            margin-top: 10px;
+        .cd-timeline-content .cd-date {
+            font-size: 1.05rem;
+            top: 15px;
         }
     }
 
