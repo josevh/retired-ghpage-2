@@ -190,3 +190,13 @@ body {
     #contact .panel-body {
         padding-bottom: 0;
     }
+
+/* all panels: header icon */
+    /* space between icon and header text */
+    h2.has-icon > i.fa {
+        padding-right: 15px;
+    }
+    /* offset icon spacing to center text */
+    h2.has-icon {
+        padding-right: 45px;
+    }
