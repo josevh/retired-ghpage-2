@@ -26,7 +26,16 @@ body {
     .navbar-custom {
         background-color: #2196F3;
     }
-    /* custom default opacity */
+    /* navbar collapsed expand button bars color */
+    .navbar-custom .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+    }
+    /* navbar collapsed expand button background color */
+    .navbar-custom .navbar-toggle:focus,
+    .navbar-custom .navbar-toggle:hover {
+        background-color: #2196F3;
+    }
+    /* custom default opacity for nav link text */
     .navbar-custom .navbar-nav > li > a { /* nav links default */
         color:#ffffff;
         opacity: 0.75;
