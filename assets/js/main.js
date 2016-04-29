@@ -31,6 +31,8 @@ $(document).ready(function(){
         });
     }, 2000);
 
+    // activate tooltips
+    $('[data-toggle="tooltip"]').tooltip();
     // show tooltips on hover
     $('[data-toggle="tooltip"]').hover(function(){
         $(this).tooltip();
