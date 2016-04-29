@@ -77,11 +77,11 @@ body {
     }
     /* panel: home */
         /* position image vertically */
-        div#avatar{
+        div.avatar{
             padding-top: 50px;
         }
         /* round image */
-        div#avatar > img {
+        div.avatar > img.avatar {
             max-width: 16%;
         }
         /* position text vertically */
