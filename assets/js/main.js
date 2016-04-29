@@ -24,7 +24,7 @@ $(document).ready(function(){
     }
     scrollNav();
 
-    // lazy load portfolio images
+    // lazy load project images
     setTimeout(function(){
         $('img[data-lazy-src]').each(function() {
             $(this).attr('src', $(this).attr('data-lazy-src'));
