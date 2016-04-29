@@ -155,15 +155,6 @@ body {
     }
 
 /* Project panel */
-    /* equal height panels  on >md windows size */
-    @media only screen and (min-width: 990px) {
-            .equal, .equal > div[class*='col-'] {
-            display: -webkit-flex;
-            display: flex;
-            flex:1 1 auto;
-        }
-    }
-
     /* remove extra borders on project panels */
     div.thumbnail {
         border: none;
