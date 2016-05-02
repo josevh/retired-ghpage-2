@@ -6,7 +6,7 @@ html, body {
 /* set background color */
 body {
     background-color: #E0E0E0;
-    margin-top: 125px; /* prevent nav obstructing body view */
+    margin-top: 70px; /* prevent nav obstructing body view */
 }
 
 /* custom navbar */
