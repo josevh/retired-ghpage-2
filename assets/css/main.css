@@ -67,7 +67,7 @@ body {
     .navbar-nav > .active > a > span:hover,
     .navbar-nav > .active > a > span:focus {
         border-bottom: 2px solid #ffffff;
-        padding-bottom: 15px; /* match bootstrap anchor padding */
+        padding-bottom: 13px; /* match bootstrap anchor padding */
     }
 
 /* panels */
