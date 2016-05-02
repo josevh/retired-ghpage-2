@@ -135,8 +135,11 @@ body {
     .cd-timeline-content > h2 {
         margin-top: 10px;
     }
+    .cd-timeline-content > p {
+        font-size: 70%;
+    }
     .cd-timeline-content > h2 > small {
-        font-size: 75%;
+        font-size: 70%;
     }
     /* timeline vertical bar color */
     #cd-timeline::before {
@@ -152,6 +155,9 @@ body {
             font-size: 1.05rem;
             top: 15px;
         }
+        .cd-timeline-content > p {
+        font-size: 65%;
+    }
     }
 
 /* Project panel */
