@@ -1,4 +1,6 @@
-# [josevh.com](http://josevh.com)
+# [view page](http://josevh.github.io/retired-ghpage-2/)
+Retired GitHub Page
+
 
 Credits:
   * [Vertical Timeline](https://codyhouse.co/gem/vertical-timeline/)
